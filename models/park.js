@@ -28,6 +28,14 @@ Park.prototype.findTotalVisitorsPerDay = function(){
     }return total;
     
 }
+Park.prototype.findTotalVisitorsPerYear = function(){
+    let total = 0;
+    for (let dinosaur of this.dinosaurs){
+        total += dinosaur.guestsAttractedPerDay;
+        totalPerYear = total * 365
+    }return totalPerYear
+    
+}
 
 
 
@@ -49,7 +57,8 @@ Park.prototype.findTotalVisitorsPerDay = function(){
 
     // park.findMostPopular();
 
-    park.findTotalVisitorsPerDay();
+    // park.findTotalVisitorsPerDay();
+    park.findTotalVisitorsPerYear();
 
 
 
