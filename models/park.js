@@ -36,7 +36,11 @@ Park.prototype.findTotalVisitorsPerYear = function(){
     }return totalPerYear
     
 }
-
+Park.prototype.calculateTotalRevenueForYear = function(){
+    totalPerYear = park.findTotalVisitorsPerYear()
+    let totalRevenue = totalPerYear * 25;
+    return totalRevenue
+}
 
 
 
@@ -58,7 +62,8 @@ Park.prototype.findTotalVisitorsPerYear = function(){
     // park.findMostPopular();
 
     // park.findTotalVisitorsPerDay();
-    park.findTotalVisitorsPerYear();
+    // park.findTotalVisitorsPerYear();
+    park.calculateTotalRevenueForYear();
 
 
 
